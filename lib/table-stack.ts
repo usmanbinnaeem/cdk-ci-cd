@@ -14,7 +14,7 @@ export class TableStack extends cdk.Stack {
           },
         });
 
-        const dynamoDBTable2 = new ddb.Table(this, 'Table', {
+        const dynamoDBTable2 = new ddb.Table(this, 'Table2', {
           partitionKey: {
             name: 'id',
             type: ddb.AttributeType.STRING,
