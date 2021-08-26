@@ -13,5 +13,12 @@ export class TableStack extends cdk.Stack {
             type: ddb.AttributeType.STRING,
           },
         });
+
+        const dynamoDBTable2 = new ddb.Table(this, 'Table', {
+          partitionKey: {
+            name: 'id',
+            type: ddb.AttributeType.STRING,
+          },
+        });
   }
 }
